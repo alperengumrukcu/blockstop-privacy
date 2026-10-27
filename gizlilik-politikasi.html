@@ -22,7 +22,7 @@
 <div class="card">
 
 <h1>Blockstop Gizlilik Politikası</h1>
-<p class="muted">Son güncelleme: 8 Ekim 2026</p>
+<p class="muted">Son güncelleme: 27 Ekim 2026</p>
 
 <p>Bu politika, <strong>Blockstop</strong> mobil oyununu (Android ve iOS) kullanırken hangi bilgilerin işlendiğini, neden işlendiğini ve haklarını açıklar. Oyun hesap açmanı, ad, e-posta veya telefon numarası vermeni <strong>istemez</strong>.</p>
 
@@ -56,19 +56,32 @@
 <h3>2.5 Bildirimler</h3>
 <p>Hatırlatma bildirimleri (ör. günlük ödül) telefonunda <strong>yerel olarak</strong> planlanır; bir sunucu üzerinden gönderilmez. İstediğin zaman uygulama ayarlarından veya telefon ayarlarından kapatabilirsin.</p>
 
+<h3>2.6 Analiz, çökme raporu ve uzaktan ayarlar (Google Firebase)</h3>
+<p>Oyunun dengesini ve kararlılığını iyileştirmek için uygulama Google Firebase'i (Analytics, Crashlytics ve Remote Config) kullanır. Bu hizmetler şunları işleyebilir:</p>
+<ul>
+  <li>oynanış ve kullanım olayları (ör. bir durağın başlaması, tamamlanması ya da kaybedilmesi; joker kullanımı; reklam ve satın alma etkileşimleri; satın alınan ürünün kimliği, ödeme bilgilerin asla),</li>
+  <li>Firebase kurulum / uygulama örneği kimliği (adına ya da bir hesaba bağlı olmayan rastgele bir tanımlayıcı) ve Android'de varsa reklam kimliği,</li>
+  <li>IP adresinden çıkarılan yaklaşık konum (ülke veya bölge düzeyinde),</li>
+  <li>cihaz ve uygulama bilgisi (model, işletim sistemi sürümü, dil, saat dilimi, uygulama sürümü),</li>
+  <li>çökme raporları: çökme anındaki teknik ayrıntılar (yığın izi, uygulama durumu, cihaz bilgisi),</li>
+  <li>uygulama açılırken Firebase Remote Config'ten oyun ayarlarını (ör. reklamların ne sıklıkla çıktığı) ister; bu istek ülke, dil, saat dilimi ve işletim sistemi sürümünü içerir.</li>
+</ul>
+<p>Amaçlar: oyuncuların nerede takıldığını anlamak, zorluk ve reklam sıklığını ayarlamak, reklam ve satın alma performansını ölçmek ve çökmeleri düzeltmek. <strong>AB, İngiltere ve benzeri bölgelerde analiz ve çökme raporlaması yalnızca onay formunda kabul edersen başlar</strong>; diğer yerlerde varsayılan olarak açıktır. Bu verileri seni tanımlamak için kullanmayız. Ayrıntılar için bkz. <a href="https://firebase.google.com/support/privacy">Firebase'de Gizlilik ve Güvenlik</a>.</p>
+
 <h2>3. Verilerin paylaşıldığı taraflar</h2>
 <table>
 <tr><th>Taraf</th><th>Amaç</th></tr>
 <tr><td>Google (AdMob)</td><td>Reklam gösterimi ve ölçümü</td></tr>
+<tr><td>Google (Firebase)</td><td>Analiz, çökme raporu ve uzaktan ayarlar (bizim adımıza işleme)</td></tr>
 <tr><td>Google Play / Apple App Store</td><td>Satın alma işlemleri</td></tr>
 </table>
 <p>Verilerini satmayız. Yukarıdaki taraflar dışında kimseyle paylaşmayız.</p>
 
 <h2>4. Hukuki dayanak</h2>
-<p>AB/İngiltere'de (GDPR) reklam kimliği ve kişiselleştirme için <strong>açık rızan</strong> (UMP formu), oyunun çalışması için gereken işlemler için <strong>sözleşmenin ifası</strong>, hata ayıklama ve güvenlik için <strong>meşru menfaat</strong> dayanak alınır. Türkiye'de 6698 sayılı KVKK kapsamında bu bilgiler ilgili mevzuata uygun işlenir.</p>
+<p>AB/İngiltere'de (GDPR) reklam kimliği ve kişiselleştirme için <strong>açık rızan</strong> (UMP formu), oyunun çalışması için gereken işlemler için <strong>sözleşmenin ifası</strong>, hata ayıklama ve güvenlik için <strong>meşru menfaat</strong> dayanak alınır. AB/İngiltere'de analiz ve çökme raporlaması <strong>açık rızana</strong>, uzaktan oyun ayarları ise meşru menfaate (oyunun işletilmesi) dayanır. Türkiye'de 6698 sayılı KVKK kapsamında bu bilgiler ilgili mevzuata uygun işlenir.</p>
 
 <h2>5. Saklama süresi</h2>
-<p>Cihazındaki bilgiler uygulamayı silene kadar kalır. Google'ın topladığı bilgilerin saklama süreleri Google'ın politikalarına tabidir.</p>
+<p>Cihazındaki bilgiler uygulamayı silene kadar kalır. Google'ın topladığı bilgilerin saklama süreleri Google'ın politikalarına tabidir; Firebase Analytics olay verisi sınırlı bir süre (en fazla 14 ay), çökme raporları yaklaşık 90 gün saklanır.</p>
 
 <h2>6. Yurt dışına aktarım</h2>
 <p>Google, verileri Türkiye ve AB dışındaki ülkelerde (ör. ABD) işleyebilir. Aktarımlar Google'ın standart sözleşme maddeleri gibi güvencelerine tabidir.</p>
